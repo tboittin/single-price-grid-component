@@ -110,4 +110,70 @@ body {
   line-height: 22px;
 }
 
+@media (min-width: 1440px) {
+  body {
+    height: 100vh;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45% 55%;
+  }
+  .wrapper .hero {
+    grid-column: 1/span 2;
+    padding: 70px;
+  }
+  .wrapper .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+  }
+  .wrapper .hero h2 {
+    font-size: 2.25rem;
+    margin-bottom: 15px;
+  }
+  .wrapper .hero p {
+    font-size: 2.25rem;
+    line-height: 50px;
+  }
+  .wrapper .price {
+    padding: 70px;
+    border-radius: 0 0 0 10px;
+  }
+  .wrapper .price h2 {
+    font-size: 2.25rem;
+  }
+  .wrapper .price--line {
+    margin-bottom: 15px;
+  }
+  .wrapper .price--line--number {
+    font-size: 4rem;
+  }
+  .wrapper .price--line--frequency {
+    margin-left: 30px;
+    font-size: 1.75rem;
+    margin-top: 12px;
+  }
+  .wrapper .price--subline {
+    font-size: 1.75rem;
+  }
+  .wrapper .price button {
+    padding: 30px;
+    font-size: 1.5rem;
+  }
+  .wrapper .why-us {
+    padding: 70px;
+    border-radius: 0 0 10px 0;
+  }
+  .wrapper .why-us h2 {
+    font-size: 2.25rem;
+  }
+  .wrapper .why-us ul li {
+    font-size: 1.75rem;
+    line-height: 35px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

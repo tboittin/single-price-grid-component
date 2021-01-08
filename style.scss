@@ -122,3 +122,85 @@ body {
         }
     }
 }
+
+@media (min-width: 1440px) {
+    body {
+        height: 100vh;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 45% 55%;
+
+        .hero {
+            grid-column: 1 / span 2;
+            padding: 70px;
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 25px;
+            }
+
+            h2 {
+                font-size: 2.25rem;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 2.25rem;
+                line-height: 50px;
+            }
+        }
+
+        .price {
+            padding: 70px;
+            border-radius: 0 0 0 10px;
+
+            h2 {
+                font-size: 2.25rem;
+            }
+
+            &--line {
+                margin-bottom: 15px;
+
+                &--number {
+                    font-size: 4rem;
+                }
+
+                &--frequency {
+                    margin-left: 30px;
+                    font-size: 1.75rem;
+                    margin-top: 12px;
+                }
+            }
+
+            &--subline {
+                font-size: 1.75rem;
+            }
+
+            button {
+                padding: 30px;
+                font-size: 1.5rem;
+            }
+        }
+
+        .why-us {
+            padding: 70px;
+            border-radius: 0 0 10px 0;
+
+            h2 {
+                font-size: 2.25rem;
+            }
+
+            ul {
+                li {
+                    font-size: 1.75rem;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+}
